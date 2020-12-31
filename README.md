@@ -52,9 +52,11 @@ querying)
 
 - Open endpoints require no Authentication.
   - Login : POST /login/
-###Endpoints that require Authentication
+  
+### Endpoints that require Authentication
 - Closed endpoints require a valid Token to be included in the header of the request. A Token can be acquired from the Login view above.
-###User
+
+### User
 
 Each endpoint manipulates or displays information related to the User whose Token is provided with the request:
   - Show signup page : GET /signup
@@ -89,9 +91,8 @@ Each endpoint manipulates or displays information related to the User whose Toke
 ### Follow  
 ![Subscribe](./docs/follow.png)
 
-
-
-
+###User Profile
+![User Profile]
 
 
 
