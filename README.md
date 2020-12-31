@@ -74,7 +74,7 @@ Each endpoint manipulates or displays information related to the User whose Toke
   - Fetch all the tweets in system : GET /all/
   - To follow a user: POST /follow
 
-### Websocket APIs
+### Websockets APIs
  - Get live tweets: GET /websocket
 
 ## Screenshots
@@ -91,8 +91,18 @@ Each endpoint manipulates or displays information related to the User whose Toke
 ### Follow  
 ![Subscribe](./docs/follow.png)
 
-###User Profile
-![User Profile]
+### Follow  
+![Subscribe](./docs/follow.png)
+
+### User Profile  
+![User Profile](./docs/userprofile.png)
+
+### Query Page
+![Query Page](./docs/query.png)
+ 
+### User Feed Page
+![User Feed Page](./docs/feed.png)
+
 
 
 
