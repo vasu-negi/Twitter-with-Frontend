@@ -1,0 +1,22 @@
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.deps.json
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.runtimeconfig.json
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.runtimeconfig.dev.json
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.dll
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.pdb
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.fsprojAssemblyReference.cache
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.AssemblyInfoInputs.cache
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.AssemblyInfo.fs
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.dll
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.pdb
+/Users/meanmachin3/github/chirp/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.genruntimeconfig.cache
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.deps.json
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.runtimeconfig.json
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.runtimeconfig.dev.json
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.dll
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/bin/Debug/netcoreapp2.1/FsTweet.Web.pdb
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.fsprojAssemblyReference.cache
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.AssemblyInfoInputs.cache
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.AssemblyInfo.fs
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.dll
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.pdb
+/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/Debug/netcoreapp2.1/FsTweet.Web.genruntimeconfig.cache

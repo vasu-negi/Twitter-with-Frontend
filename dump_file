@@ -1,0 +1,224 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 13.0
+-- Dumped by pg_dump version 13.0
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: fstweet; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE fstweet WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'C';
+
+
+ALTER DATABASE fstweet OWNER TO postgres;
+
+\connect fstweet
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: uuid-ossp; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION "uuid-ossp"; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION "uuid-ossp" IS 'generate universally unique identifiers (UUIDs)';
+
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: Social; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Social" (
+    "Id" uuid NOT NULL,
+    "FollowerUserId" integer NOT NULL,
+    "FollowingUserId" integer NOT NULL
+);
+
+
+ALTER TABLE public."Social" OWNER TO postgres;
+
+--
+-- Name: Tweets; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Tweets" (
+    "Id" uuid NOT NULL,
+    "Post" character varying(144) NOT NULL,
+    "UserId" integer NOT NULL,
+    "TweetedAt" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE public."Tweets" OWNER TO postgres;
+
+--
+-- Name: Users; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."Users" (
+    "Id" integer NOT NULL,
+    "Username" character varying(12) NOT NULL,
+    "Email" character varying(254) NOT NULL,
+    "PasswordHash" text NOT NULL,
+    "EmailVerificationCode" text NOT NULL,
+    "IsEmailVerified" boolean NOT NULL
+);
+
+
+ALTER TABLE public."Users" OWNER TO postgres;
+
+--
+-- Name: Users_Id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."Users_Id_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."Users_Id_seq" OWNER TO postgres;
+
+--
+-- Name: Users_Id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."Users_Id_seq" OWNED BY public."Users"."Id";
+
+
+--
+-- Name: VersionInfo; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."VersionInfo" (
+    "Version" bigint NOT NULL,
+    "AppliedOn" timestamp without time zone,
+    "Description" character varying(1024)
+);
+
+
+ALTER TABLE public."VersionInfo" OWNER TO postgres;
+
+--
+-- Name: Users Id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Users" ALTER COLUMN "Id" SET DEFAULT nextval('public."Users_Id_seq"'::regclass);
+
+
+--
+-- Name: Social PK_Social; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Social"
+    ADD CONSTRAINT "PK_Social" PRIMARY KEY ("Id");
+
+
+--
+-- Name: Tweets PK_Tweets; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Tweets"
+    ADD CONSTRAINT "PK_Tweets" PRIMARY KEY ("Id");
+
+
+--
+-- Name: Users PK_Users; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Users"
+    ADD CONSTRAINT "PK_Users" PRIMARY KEY ("Id");
+
+
+--
+-- Name: Social SocialRelationship; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Social"
+    ADD CONSTRAINT "SocialRelationship" UNIQUE ("FollowerUserId", "FollowingUserId");
+
+
+--
+-- Name: IX_Users_Email; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX "IX_Users_Email" ON public."Users" USING btree ("Email");
+
+
+--
+-- Name: IX_Users_Username; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX "IX_Users_Username" ON public."Users" USING btree ("Username");
+
+
+--
+-- Name: UC_Version; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX "UC_Version" ON public."VersionInfo" USING btree ("Version");
+
+
+--
+-- Name: Social FK_Social_FollowerUserId_Users_Id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Social"
+    ADD CONSTRAINT "FK_Social_FollowerUserId_Users_Id" FOREIGN KEY ("FollowerUserId") REFERENCES public."Users"("Id");
+
+
+--
+-- Name: Social FK_Social_FollowingUserId_Users_Id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Social"
+    ADD CONSTRAINT "FK_Social_FollowingUserId_Users_Id" FOREIGN KEY ("FollowingUserId") REFERENCES public."Users"("Id");
+
+
+--
+-- Name: Tweets FK_Tweets_UserId_Users_Id; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."Tweets"
+    ADD CONSTRAINT "FK_Tweets_UserId_Users_Id" FOREIGN KEY ("UserId") REFERENCES public."Users"("Id");
+
+
+--
+-- PostgreSQL database dump complete
+--
+

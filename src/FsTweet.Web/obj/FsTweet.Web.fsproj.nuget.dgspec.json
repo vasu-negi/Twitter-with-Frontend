@@ -1,0 +1,129 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/FsTweet.Web.fsproj": {}
+  },
+  "projects": {
+    "/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/FsTweet.Web.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/FsTweet.Web.fsproj",
+        "projectName": "FsTweet.Web",
+        "projectPath": "/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/FsTweet.Web.fsproj",
+        "packagesPath": "/Users/vasunegi/.nuget/packages/",
+        "outputPath": "/Users/vasunegi/Downloads/NegiYadav (1)/src/FsTweet.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vasunegi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Aether": {
+              "target": "Package",
+              "version": "[8.2.0, )",
+              "generatePathProperty": true
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "generatePathProperty": true
+            },
+            "Chessie": {
+              "target": "Package",
+              "version": "[0.6.0, )",
+              "generatePathProperty": true
+            },
+            "Chiron": {
+              "target": "Package",
+              "version": "[6.2.1, )",
+              "generatePathProperty": true
+            },
+            "DotLiquid": {
+              "target": "Package",
+              "version": "[2.0.298, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Logary": {
+              "target": "Package",
+              "version": "[4.2.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[1.3.2, )",
+              "generatePathProperty": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.1.1.1, )",
+              "generatePathProperty": true
+            },
+            "Postmark": {
+              "target": "Package",
+              "version": "[3.3.0, )",
+              "generatePathProperty": true
+            },
+            "Suave": {
+              "target": "Package",
+              "version": "[2.4.3, )",
+              "generatePathProperty": true
+            },
+            "Suave.DotLiquid": {
+              "target": "Package",
+              "version": "[2.4.3, )",
+              "generatePathProperty": true
+            },
+            "Suave.Experimental": {
+              "target": "Package",
+              "version": "[2.4.3, )",
+              "generatePathProperty": true
+            },
+            "stream-net": {
+              "target": "Package",
+              "version": "[2.2.1, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
