@@ -33,9 +33,9 @@ schema necessary for this project
 the project
 - Visit localhost:5000 to view this project
 
-##What is Working
+## What is Working
 
-##Register account
+## Register account
 - Send a tweet. Tweets can have hashtags (e.g. #COP5615isgreat) and
 mentions (@bestuser)
 - Subscribe to user’s tweets
@@ -46,9 +46,9 @@ in which the user is mentioned (my mentions)
 - If the user is connected, deliver the above types of tweets live (without
 querying)
 
-##API Details
+## API Details
 
-###Open Endpoints
+### Open Endpoints
 
 - Open endpoints require no Authentication.
   - Login : POST /login/
@@ -62,7 +62,7 @@ Each endpoint manipulates or displays information related to the User whose Toke
   - Signup success: GET /signup/success/%s
   - Logout: GET /logout
 
-###UserProfile
+### UserProfile
 
 %s means it accepts a username of type string
   - Show user profile page : GET /%s
@@ -72,24 +72,24 @@ Each endpoint manipulates or displays information related to the User whose Toke
   - Fetch all the tweets in system : GET /all/
   - To follow a user: POST /follow
 
-###Websocket APIs
+### Websocket APIs
  - Get live tweets: GET /websocket
 
-##Screenshots
+## Screenshots
 
-###Index Page 
+### Index Page 
 ![Index](./docs/index.png)
 
-###Login Page
+### Login Page
 ![Login](./docs/signup.png)
 
-###Signup Page
+### Signup Page
 ![Signup](./docs/signup.png)
 
-###Follow  
+### Follow  
 ![Subscribe](./docs/follow.png)
 
-###User Profile
+### User Profile
 ![User Profile](./docs/userprofile.png)
 
 
