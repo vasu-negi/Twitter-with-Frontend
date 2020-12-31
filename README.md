@@ -89,8 +89,7 @@ Each endpoint manipulates or displays information related to the User whose Toke
 ### Follow  
 ![Subscribe](./docs/follow.png)
 
-### User Profile
-![User Profile](./docs/userprofile.png)
+
 
 
 
