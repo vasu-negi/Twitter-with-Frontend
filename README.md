@@ -12,7 +12,7 @@ Twitter Clone with Front End
   - [User](#user)
   - [UserProfile](#user-profile)
   - [Websockets APIs](#websockets-apis)
--[Screenshots](#screenshots)
+- [Screenshots](#screenshots)
   - [Index](#index)
   - [Login](#login)
   - [Signup](#signup)
